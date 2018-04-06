@@ -1,0 +1,59 @@
+
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton crip;
+    private javax.swing.JLabel nome;
+    private javax.swing.JLabel resultado;
+    private javax.swing.JTextField texto;
+    // End of variables declaration                   
+  
+
+    public void criptografia(){
+    
+    String pegaTexto = texto.getText();
+
+    int QCaracter = pegaTexto.length();
+
+    for (int i=0; i<QCaracter ; i++) {
+
+       char a = pegaTexto.charAt(i);
+
+       int converte = a + 5;
+
+       char b = (char)converte;
+
+       saida = saida + b;
+
+       resultado.setText(saida);
+       
+       
+    }
+
+
+    public void criptografia(){
+    
+    String pegaTexto = texto.getText();
+    int QCaracter = pegaTexto.length();
+    for (int i=0; i<QCaracter ; i++) {
+       char a = pegaTexto.charAt(i);
+       int converte = a + 5;
+       char b = (char)converte;
+       saida = saida + b;
+       resultado.setText(saida);
+       
+       
+    }
+    }
+    
+    public void descriptografia() {
+      String pegaTexto = texto.getText();
+    int QCaracter = pegaTexto.length();
+    for (int i=0; i<QCaracter ; i++) {
+       char a = pegaTexto.charAt(i);
+       int converte = a - 5;
+       char b = (char)converte;
+       saida = saida + b;
+       resultado.setText(saida);
+    }
+}
+}
