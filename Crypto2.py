@@ -9,7 +9,7 @@ def cript(texto1):
     print("Decrypt?")
     check = input(str())
     if (check == "y"):
-        descript(texcript)
+        decript(texcript)
     elif (check == "n"):
         print("Closing")
     else:
@@ -18,13 +18,13 @@ def cript(texto1):
 
 
 
-def descript(texto2):
+def decript(texto2):
     i = 0
-    descript = ""
+    decript = ""
     while i < len(texto2):
             cript = ord(texto2[i])
-            descript = descript + chr(cript - 5)
-            print(descript)
+            decript = decript + chr(cript - 5)
+            print(decript)
             i+=1
 
 texto1 = input()
